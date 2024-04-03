@@ -84,7 +84,7 @@ const App = () => {
   return (
     <div className={`App ${theme}`}>
       <button onClick={toggleTheme}>Toggle Theme</button>
-      <h1>Pomodoro Timer</h1>
+      <h1>Mydoro Timer</h1>
       <CircularProgressbar value={percentage} text={`${Math.floor(timeLeft / 60)}:${timeLeft % 60 < 10 ? `0${timeLeft % 60}` : timeLeft % 60}`} />
       <div className="buttons">
         <button onClick={toggleTimer}>{timerActive ? 'Pause' : 'Start'}</button>
